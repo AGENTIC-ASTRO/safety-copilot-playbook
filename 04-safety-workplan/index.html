@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generation of Safety Workplan | Safety Co-Pilot Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="hazard-stripe"></div>
+<div class="shell">
+<div class="mobile-bar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span> PLAYBOOK</a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">MENU</button>
+  </div>
+  <aside class="sidebar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span><br>PLAYBOOK</a>
+    <div class="brand-sub">M365 Copilot reference for Army Safety</div>
+    <div class="nav-label">Contents</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Overview</a></li>
+      <li><a class="nav-list-item" href="../01-how-it-works/index.html"><span class="num">01</span>How Safety Copilot Works on M365</a></li>
+<li><a class="nav-list-item" href="../02-prompt-design/index.html"><span class="num">02</span>Designing Useful Prompts</a></li>
+<li><a class="nav-list-item" href="../03-regulations-query/index.html"><span class="num">03</span>Query on Army Safety Regulations</a></li>
+<li><a class="nav-list-item active" href="../04-safety-workplan/index.html"><span class="num">04</span>Generation of Safety Workplan</a></li>
+<li><a class="nav-list-item" href="../05-safety-insights/index.html"><span class="num">05</span>Generation of Safety Insights</a></li>
+<li><a class="nav-list-item" href="../06-safety-sop/index.html"><span class="num">06</span>Generation of Safety SOPs</a></li>
+<li><a class="nav-list-item" href="../07-safety-education/index.html"><span class="num">07</span>Generation of Safety Education Material</a></li>
+
+    </ul>
+  </aside>
+<main>
+<div class="content">
+<div class="eyebrow">Section 04</div>
+<h1>Generation of Safety Workplan</h1>
+<p class="intro">These prompts draft a starting workplan structure (timelines, focus areas and responsibilities) that you then adjust to your unit's real schedule and hazard profile.</p>
+
+<div class="callout">For the best results, upload or attach the relevant document (a recent inspection finding, an existing workplan or the applicable regulation) before you prompt, so Copilot works from your actual source rather than general knowledge.</div>
+
+<h2>Prompt templates</h2>
+<div class="card">
+<div class="card-head"><span class="use-case">Draft a period unit safety workplan</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a unit safety officer. Context: I&#x27;m planning the safety workplan for [unit/department] covering [time period, e.g. &quot;Q2 2026&quot;]. Key focus areas are [list 2-4 areas, e.g. &quot;vehicle safety, working at height, heat injury prevention&quot;]. Task: draft a workplan with monthly milestones, responsible parties (use placeholder roles), and success indicators. Format: a table with columns Month, Focus Area, Activity, Responsible Role, Success Indicator.</div>
+<div class="tip">List your real focus areas. The more specific they are, the less editing you'll need afterwards.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Build a unit safety workplan around a known gap</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a unit safety officer. Context: a recent inspection found [describe the gap, e.g. &quot;inconsistent use of fall-arrest harnesses on scaffolding&quot;]. Task: draft a 90-day corrective workplan to close this gap, including training, inspection checkpoints, and a review date. Format: a numbered list of phases, each with objective, actions, and timeframe.</div>
+<div class="tip">Feed in the actual finding from an inspection report for a workplan that's grounded in a real gap rather than generic best practice.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Turn a safety workplan into a briefing summary</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a unit safety officer. Context: [paste your draft workplan]. Task: summarise this into a one-page briefing suitable for presenting to a commanding officer. Format: an executive summary paragraph, then three bullet sections: Priorities, Resourcing, Risks if delayed.</div>
+<div class="tip">Handy once a workplan draft exists and you need a short version for a briefing rather than the full document.</div>
+</div>
+
+<div class="callout">Copilot doesn't know your unit's actual staffing, budget or calendar. Treat generated timelines and responsible-role placeholders as a structure to fill in, not a finished schedule.</div>
+
+</div>
+<footer class="foot">Internal reference for the Army Safety Inspectorate. Prompts are starting templates; review outputs before use.<br>&copy; 2026 ASTRO, ASI.</footer>
+</main>
+</div>
+<script src="../assets/script.js"></script>
+</body>
+</html>
