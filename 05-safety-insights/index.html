@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generation of Safety Insights | Safety Co-Pilot Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="hazard-stripe"></div>
+<div class="shell">
+<div class="mobile-bar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span> PLAYBOOK</a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">MENU</button>
+  </div>
+  <aside class="sidebar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span><br>PLAYBOOK</a>
+    <div class="brand-sub">M365 Copilot reference for Army Safety</div>
+    <div class="nav-label">Contents</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Overview</a></li>
+      <li><a class="nav-list-item" href="../01-how-it-works/index.html"><span class="num">01</span>How Safety Copilot Works on M365</a></li>
+<li><a class="nav-list-item" href="../02-prompt-design/index.html"><span class="num">02</span>Designing Useful Prompts</a></li>
+<li><a class="nav-list-item" href="../03-regulations-query/index.html"><span class="num">03</span>Query on Army Safety Regulations</a></li>
+<li><a class="nav-list-item" href="../04-safety-workplan/index.html"><span class="num">04</span>Generation of Safety Workplan</a></li>
+<li><a class="nav-list-item active" href="../05-safety-insights/index.html"><span class="num">05</span>Generation of Safety Insights</a></li>
+<li><a class="nav-list-item" href="../06-safety-sop/index.html"><span class="num">06</span>Generation of Safety SOPs</a></li>
+<li><a class="nav-list-item" href="../07-safety-education/index.html"><span class="num">07</span>Generation of Safety Education Material</a></li>
+
+    </ul>
+  </aside>
+<main>
+<div class="content">
+<div class="eyebrow">Section 05</div>
+<h1>Generation of Safety Insights</h1>
+<p class="intro">These prompts turn raw incident logs, inspection notes or near-miss reports into patterns you can act on.</p>
+
+<div class="callout">For the best results, upload or attach the relevant document (your incident log, inspection notes or near-miss data) before you prompt, so Copilot works from your actual source rather than general knowledge.</div>
+
+<h2>Prompt templates</h2>
+<div class="card">
+<div class="card-head"><span class="use-case">Spot patterns in incident data</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety data analyst. Context: [paste or attach a list of incidents/near-misses with date, location, type, and cause]. Task: identify the top three recurring patterns by cause, location, or time of day. Format: a short paragraph per pattern, each followed by the supporting data points and one suggested corrective action.</div>
+<div class="tip">The more structured your input data (consistent columns for date, type, cause), the more reliable the pattern-spotting will be.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Compare this period against the last</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety data analyst. Context: [paste this period&#x27;s incident summary] and [paste last period&#x27;s incident summary]. Task: compare the two and highlight what improved, what worsened, and anything new that appeared. Format: a table with columns Metric, This Period, Last Period, Change, Comment.</div>
+<div class="tip">Good for the trend section of a recurring report. Pair it with the workplan briefing prompt in Section 04.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Turn inspection notes into a risk-ranked list</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety data analyst. Context: [paste raw inspection notes/observations]. Task: convert these into a risk-ranked list, ranking each observation by likelihood and severity. Format: a table with columns Observation, Likelihood (Low/Med/High), Severity (Low/Med/High), Overall Risk, Recommended Action.</div>
+<div class="tip">Copilot's risk ranking is a starting judgement. Confirm high-severity items with your own assessment before publishing.</div>
+</div>
+
+<div class="callout">Copilot's patterns, comparisons and risk rankings are only as reliable as the data you give it, and it can still miscount or misjudge. Check every insight against the source data and your own assessment before it informs a decision or goes into a report.</div>
+
+</div>
+<footer class="foot">Internal reference for the Army Safety Inspectorate. Prompts are starting templates; review outputs before use.<br>&copy; 2026 ASTRO, ASI.</footer>
+</main>
+</div>
+<script src="../assets/script.js"></script>
+</body>
+</html>
