@@ -1,0 +1,353 @@
+/* Safety Co-Pilot Playbook — shared styles */
+
+:root {
+  --bg: #EEF0F2;
+  --paper: #FFFFFF;
+  --ink: #1A2233;
+  --ink-soft: #545F70;
+  --ink-faint: #8891A0;
+  --accent: #C99A2E;
+  --accent-deep: #8C6D1F;
+  --line: #D7DBDF;
+  --line-strong: #B9C0C8;
+  --code-bg: #1A2233;
+  --code-ink: #E7E2D4;
+  --stripe-a: #1A2233;
+  --stripe-b: #C99A2E;
+  --radius: 3px;
+  --max-width: 780px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+a { color: var(--accent-deep); }
+a:hover { color: var(--ink); }
+
+/* ---------- Hazard stripe masthead — the one signature motif ---------- */
+.hazard-stripe {
+  height: 8px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--stripe-a) 0 18px,
+    var(--stripe-b) 18px 36px
+  );
+}
+
+/* ---------- Shell layout ---------- */
+.shell {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: var(--ink);
+  color: #C7CDD8;
+  padding: 28px 22px 28px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.brand {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+.brand span { color: var(--accent); }
+
+.brand-sub {
+  color: #7C879A;
+  font-size: 0.78rem;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #313B4D;
+}
+
+.nav-label {
+  font-size: 0.72rem;
+  color: #6B7688;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 10px 2px;
+}
+
+.nav-list { list-style: none; margin: 0 0 4px; padding: 0; }
+
+.nav-list a {
+  display: block;
+  color: #C7CDD8;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  font-size: 0.92rem;
+  margin-bottom: 2px;
+  border-left: 3px solid transparent;
+}
+.nav-list a .num {
+  color: #6B7688;
+  font-family: "Oswald", sans-serif;
+  margin-right: 8px;
+}
+.nav-list a:hover {
+  background: #232C3D;
+  color: #fff;
+}
+.nav-list a.active {
+  background: #232C3D;
+  color: #fff;
+  border-left-color: var(--accent);
+}
+.nav-list a.active .num { color: var(--accent); }
+
+/* ---------- Main content ---------- */
+main {
+  padding: 0;
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px 32px 100px;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  margin: 0 0 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+.content h1 {
+  font-size: 2.1rem;
+  margin: 0 0 18px;
+}
+
+.content > .intro {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  max-width: 62ch;
+  margin: 0 0 36px;
+}
+
+.content h2 {
+  font-size: 1.4rem;
+  margin: 44px 0 6px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.content h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0;}
+
+hr.rule {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 40px 0;
+}
+
+/* ---------- Prompt card ---------- */
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  margin: 18px 0 28px;
+  overflow: hidden;
+}
+
+.card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px 10px;
+}
+
+.card-head .use-case {
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+
+.copy-btn {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  color: var(--ink-soft);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.78rem;
+  padding: 5px 11px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.copy-btn:hover { border-color: var(--accent-deep); color: var(--accent-deep); }
+.copy-btn.copied { border-color: #4B7A54; color: #4B7A54; }
+
+.prompt-block {
+  background: var(--code-bg);
+  color: var(--code-ink);
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  padding: 16px 18px;
+  margin: 0 18px 14px;
+  border-radius: var(--radius);
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.tip {
+  padding: 0 18px 16px;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+.tip strong { color: var(--ink); }
+
+/* ---------- Screenshot figures (desktop + mobile) ---------- */
+.shot-label {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  margin: 26px 0 2px;
+}
+.screenshots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+  margin: 6px 0 20px;
+}
+
+.shot {
+  margin: 0;
+}
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.shot figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 620px) {
+  .screenshots { grid-template-columns: 1fr; }
+}
+
+/* ---------- Callout ---------- */
+.callout {
+  background: #FBF4E3;
+  border-left: 3px solid var(--accent);
+  padding: 14px 18px;
+  margin: 24px 0;
+  font-size: 0.94rem;
+  color: #5C4A16;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* ---------- Grid of section cards on index ---------- */
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.section-tile {
+  display: block;
+  text-decoration: none;
+  background: var(--paper);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 18px 18px 16px;
+  transition: border-color 0.15s ease;
+}
+.section-tile:hover { border-color: var(--accent-deep); }
+.section-tile .num {
+  font-family: "Oswald", sans-serif;
+  color: var(--accent-deep);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+}
+.section-tile h3 {
+  margin: 6px 0 6px;
+  font-size: 1.08rem;
+  color: var(--ink);
+}
+.section-tile p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+
+/* ---------- Mobile top nav ---------- */
+.mobile-bar {
+  display: none;
+  background: var(--ink);
+  color: #fff;
+  padding: 14px 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-bar .brand { margin: 0; }
+.mobile-toggle {
+  background: none;
+  border: 1px solid #3A455A;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 860px) {
+  .shell { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .sidebar.open { display: block; position: static; height: auto; }
+  .mobile-bar { display: flex; }
+  .content { padding: 32px 20px 80px; }
+  .section-grid { grid-template-columns: 1fr; }
+  .content h1 { font-size: 1.7rem; }
+}
+
+footer.foot {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px 60px;
+  color: var(--ink-faint);
+  font-size: 0.82rem;
+}
