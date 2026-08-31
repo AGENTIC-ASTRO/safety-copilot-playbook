@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" role="img" aria-label="Placeholder for mobile Copilot upload screenshot">
+  <rect width="390" height="844" fill="#FFFFFF"/>
+  <rect x="6" y="6" width="378" height="832" fill="#EEF0F2" stroke="#B9C0C8" stroke-width="3" stroke-dasharray="12 10" rx="24"/>
+  <g transform="translate(195 360)" fill="none" stroke="#8891A0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-44 38 L-44 70 L44 70 L44 38"/>
+    <path d="M0 56 L0 -38"/>
+    <path d="M-30 -8 L0 -38 L30 -8"/>
+  </g>
+  <text x="195" y="480" font-family="Oswald, Arial Narrow, sans-serif" font-size="30" font-weight="600" fill="#545F70" text-anchor="middle" letter-spacing="1">MOBILE</text>
+  <text x="195" y="516" font-family="Oswald, Arial Narrow, sans-serif" font-size="30" font-weight="600" fill="#545F70" text-anchor="middle" letter-spacing="1">SCREENSHOT</text>
+  <text x="195" y="560" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" fill="#8891A0" text-anchor="middle">Replace with your</text>
+  <text x="195" y="584" font-family="IBM Plex Sans, Arial, sans-serif" font-size="19" fill="#8891A0" text-anchor="middle">Copilot upload screenshot</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Placeholder for desktop Copilot upload screenshot">
+  <rect width="1600" height="1000" fill="#FFFFFF"/>
+  <rect x="8" y="8" width="1584" height="984" fill="#EEF0F2" stroke="#B9C0C8" stroke-width="3" stroke-dasharray="14 12" rx="6"/>
+  <g transform="translate(800 440)" fill="none" stroke="#8891A0" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-70 60 L-70 110 L70 110 L70 60"/>
+    <path d="M0 90 L0 -60"/>
+    <path d="M-48 -12 L0 -60 L48 -12"/>
+  </g>
+  <text x="800" y="640" font-family="Oswald, Arial Narrow, sans-serif" font-size="52" font-weight="600" fill="#545F70" text-anchor="middle" letter-spacing="1">DESKTOP SCREENSHOT</text>
+  <text x="800" y="700" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" fill="#8891A0" text-anchor="middle">Replace with your Copilot upload screenshot</text>
+</svg>
