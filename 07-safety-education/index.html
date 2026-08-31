@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generation of Safety Education Material | Safety Co-Pilot Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="hazard-stripe"></div>
+<div class="shell">
+<div class="mobile-bar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span> PLAYBOOK</a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">MENU</button>
+  </div>
+  <aside class="sidebar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span><br>PLAYBOOK</a>
+    <div class="brand-sub">M365 Copilot reference for Army Safety</div>
+    <div class="nav-label">Contents</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Overview</a></li>
+      <li><a class="nav-list-item" href="../01-how-it-works/index.html"><span class="num">01</span>How Safety Copilot Works on M365</a></li>
+<li><a class="nav-list-item" href="../02-prompt-design/index.html"><span class="num">02</span>Designing Useful Prompts</a></li>
+<li><a class="nav-list-item" href="../03-regulations-query/index.html"><span class="num">03</span>Query on Army Safety Regulations</a></li>
+<li><a class="nav-list-item" href="../04-safety-workplan/index.html"><span class="num">04</span>Generation of Safety Workplan</a></li>
+<li><a class="nav-list-item" href="../05-safety-insights/index.html"><span class="num">05</span>Generation of Safety Insights</a></li>
+<li><a class="nav-list-item" href="../06-safety-sop/index.html"><span class="num">06</span>Generation of Safety SOPs</a></li>
+<li><a class="nav-list-item active" href="../07-safety-education/index.html"><span class="num">07</span>Generation of Safety Education Material</a></li>
+
+    </ul>
+  </aside>
+<main>
+<div class="content">
+<div class="eyebrow">Section 07</div>
+<h1>Generation of Safety Education Material</h1>
+<p class="intro">These prompts turn regulations, SOPs and incident lessons into education material your people will actually read: briefings, infographics and quick knowledge checks. Always adapt the tone and level of detail to your audience before you use it.</p>
+
+<div class="callout">For the best results, upload or attach the relevant document (the regulation, SOP or incident report you are teaching from) before you prompt, so Copilot works from your actual source rather than general knowledge.</div>
+
+<h2>Prompt templates</h2>
+<div class="card">
+<div class="card-head"><span class="use-case">Draft a safety briefing or toolbox talk</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety education officer. Context: I need to brief [audience, e.g. &quot;a platoon of storemen&quot;] on [topic, e.g. &quot;manual handling&quot;]. Key points to cover are [list 2-4 points]. Task: draft a short talking-points brief the presenter can deliver in [duration, e.g. &quot;10 minutes&quot;], including a real-world example and three questions to check understanding. Format: an outline with the headings Hook, Key Points, Example and Check Questions.</div>
+<div class="tip">Name the audience and the time you have. Copilot pitches the level and length to match, rather than producing a generic lecture.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Turn a regulation or SOP into a safety infographic</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety education officer. Context: [paste the regulation or SOP]. Task: turn this into a safety infographic for [audience] that gets across what to do, what to avoid and the single most important safety message at a glance. Format: an infographic layout with a headline, three to five short labelled points (suggest a simple icon for each), any figure worth highlighting and a bold key-message banner.</div>
+<div class="tip">Copilot can build the infographic itself in the M365 apps. Give it the audience and the one message you most want remembered, then refine the visual before you share it.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Turn an incident or near-miss into a safety infographic</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety education officer. Context: [paste or attach the incident or near-miss report]. Task: turn this into a safety learning infographic for [audience] that shows what happened, why it happened and the lessons to prevent a repeat, without naming individuals. Format: an infographic layout with a short headline, a simple what-happened sequence, the key contributing factors and two or three clear lessons, ending with a bold prevention message.</div>
+<div class="tip">Turns a single event into a shareable lesson. Keep it factual and focus on the system fix rather than blame before you circulate it.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Create a knowledge check or quiz</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety education officer. Context: the topic is [topic] and the reference is [paste or name the regulation or SOP]. Task: write [number, e.g. &quot;five&quot;] multiple-choice questions that test understanding of the key requirements, each with four options, the correct answer marked and a one-line explanation. Format: a numbered list of questions, each followed by options A to D, the answer and the explanation.</div>
+<div class="tip">Use it to reinforce a briefing or check retention after training. Confirm each answer against the source before you use it.</div>
+</div>
+
+<div class="callout">Education material shapes how people act on the ground, so accuracy matters. Check every fact, figure and instruction against the current regulation, and have the responsible safety officer approve it, before it is issued.</div>
+
+</div>
+<footer class="foot">Internal reference for the Army Safety Inspectorate. Prompts are starting templates; review outputs before use.<br>&copy; 2026 ASTRO, ASI.</footer>
+</main>
+</div>
+<script src="../assets/script.js"></script>
+</body>
+</html>
