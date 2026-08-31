@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generation of Safety SOPs | Safety Co-Pilot Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="hazard-stripe"></div>
+<div class="shell">
+<div class="mobile-bar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span> PLAYBOOK</a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">MENU</button>
+  </div>
+  <aside class="sidebar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span><br>PLAYBOOK</a>
+    <div class="brand-sub">M365 Copilot reference for Army Safety</div>
+    <div class="nav-label">Contents</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Overview</a></li>
+      <li><a class="nav-list-item" href="../01-how-it-works/index.html"><span class="num">01</span>How Safety Copilot Works on M365</a></li>
+<li><a class="nav-list-item" href="../02-prompt-design/index.html"><span class="num">02</span>Designing Useful Prompts</a></li>
+<li><a class="nav-list-item" href="../03-regulations-query/index.html"><span class="num">03</span>Query on Army Safety Regulations</a></li>
+<li><a class="nav-list-item" href="../04-safety-workplan/index.html"><span class="num">04</span>Generation of Safety Workplan</a></li>
+<li><a class="nav-list-item" href="../05-safety-insights/index.html"><span class="num">05</span>Generation of Safety Insights</a></li>
+<li><a class="nav-list-item active" href="../06-safety-sop/index.html"><span class="num">06</span>Generation of Safety SOPs</a></li>
+<li><a class="nav-list-item" href="../07-safety-education/index.html"><span class="num">07</span>Generation of Safety Education Material</a></li>
+
+    </ul>
+  </aside>
+<main>
+<div class="content">
+<div class="eyebrow">Section 06</div>
+<h1>Generation of Safety Standard Operating Procedures</h1>
+<p class="intro">These prompts draft a first-pass SOP from a task description. Every generated SOP still needs sign-off from the actual process owner and a check against current regulation before it's issued.</p>
+
+<div class="callout">For the best results, upload or attach the relevant document (the existing SOP, task details or related regulation) before you prompt, so Copilot works from your actual source rather than general knowledge.</div>
+
+<h2>Prompt templates</h2>
+<div class="card">
+<div class="card-head"><span class="use-case">Draft a new SOP from a task description</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety SOP writer. Context: the task is [describe the task, e.g. &quot;refuelling a generator in the field&quot;]. Known hazards include [list hazards]. Task: draft a Standard Operating Procedure covering scope, required PPE, step-by-step procedure, and emergency response. Format: use the headings Scope, PPE Required, Procedure (numbered steps), Emergency Response.</div>
+<div class="tip">List the hazards you already know about. Copilot will then structure around them rather than guessing generic ones.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Update an SOP for a changed condition</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety SOP writer. Context: [paste the existing SOP]. The following has changed: [describe the change, e.g. &quot;new equipment model&quot; or &quot;updated PPE standard&quot;]. Task: revise the SOP to reflect this change, marking each section you modified. Format: keep the same heading structure as the original; add a change note at the top summarising what was updated and why.</div>
+<div class="tip">Keeping the same structure makes it easy for reviewers to spot exactly what changed.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Convert an SOP into a quick-reference checklist</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety SOP writer. Context: [paste the full SOP]. Task: extract this into a one-page quick-reference checklist a person could follow on-site. Format: a checklist using short imperative steps, grouped under Before, During, After.</div>
+<div class="tip">Useful for laminated field cards. Keep the full SOP as the authoritative document and this as the field-ready summary.</div>
+</div>
+
+<div class="callout">A generated SOP is a draft, not an approved procedure. It must go through your unit's normal review and sign-off process, and be checked against the current regulation, before it is issued or relied on.</div>
+
+</div>
+<footer class="foot">Internal reference for the Army Safety Inspectorate. Prompts are starting templates; review outputs before use.<br>&copy; 2026 ASTRO, ASI.</footer>
+</main>
+</div>
+<script src="../assets/script.js"></script>
+</body>
+</html>
