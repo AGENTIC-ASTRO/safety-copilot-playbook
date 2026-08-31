@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Query on Army Safety Regulations | Safety Co-Pilot Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="hazard-stripe"></div>
+<div class="shell">
+<div class="mobile-bar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span> PLAYBOOK</a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">MENU</button>
+  </div>
+  <aside class="sidebar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span><br>PLAYBOOK</a>
+    <div class="brand-sub">M365 Copilot reference for Army Safety</div>
+    <div class="nav-label">Contents</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Overview</a></li>
+      <li><a class="nav-list-item" href="../01-how-it-works/index.html"><span class="num">01</span>How Safety Copilot Works on M365</a></li>
+<li><a class="nav-list-item" href="../02-prompt-design/index.html"><span class="num">02</span>Designing Useful Prompts</a></li>
+<li><a class="nav-list-item active" href="../03-regulations-query/index.html"><span class="num">03</span>Query on Army Safety Regulations</a></li>
+<li><a class="nav-list-item" href="../04-safety-workplan/index.html"><span class="num">04</span>Generation of Safety Workplan</a></li>
+<li><a class="nav-list-item" href="../05-safety-insights/index.html"><span class="num">05</span>Generation of Safety Insights</a></li>
+<li><a class="nav-list-item" href="../06-safety-sop/index.html"><span class="num">06</span>Generation of Safety SOPs</a></li>
+<li><a class="nav-list-item" href="../07-safety-education/index.html"><span class="num">07</span>Generation of Safety Education Material</a></li>
+
+    </ul>
+  </aside>
+<main>
+<div class="content">
+<div class="eyebrow">Section 03</div>
+<h1>Query on Army Safety Regulations</h1>
+<p class="intro">Use these prompts to look up and interpret Army safety regulations, directives and policies. Always verify the cited reference yourself before relying on it.</p>
+
+<div class="callout">For the best results, upload or attach the relevant document (the regulation, directive or policy in question) before you prompt, so Copilot works from your actual source rather than general knowledge.</div>
+
+<h2>Prompt templates</h2>
+<div class="card">
+<div class="card-head"><span class="use-case">Find and explain a specific directive or policy (e.g. WBGT and Work Rest Cycles, 5M 4L, Safety Investigation Template, etc)</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety compliance assistant. Context: I have a query on [safety regulation name/type/definition]. Task: find the covering directive or policy on [topic, e.g. &quot;working at height, work rest cycle, etc&quot;] and explain it in plain language, including who it applies to and any exceptions. Format: a short paragraph, then a bullet list of key requirements, with the directive/regulation/policy cited for each point.</div>
+<div class="tip">Good for looking up a specific directive such as WBGT and work rest cycles, 5M 4L or the Safety Investigation Template. Ask it to cite the directive or policy for each point so you can verify against the source.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Compare unit safety system against safety regulations</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety compliance analyst. Context: Compare my document uploaded [unit safety plan, safety briefing points, unit safety system, etc] against the Army Safety Requirements. Task: identify the gaps from my document focusing on requirements that affect [area, e.g. &quot;PPE standards&quot;]. Format: a [table, Word document, Excel sheet, etc] with my document content compared against the regulations and the associated gaps.</div>
+<div class="tip">Upload your document first so Copilot can compare against it directly. Treat the gap list as a starting point and confirm each gap against the actual regulation.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Check a scenario against safety regulations</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a safety compliance assistant. Context: I have [regulation name] open. Task: assess whether the following scenario complies: [describe scenario in 2-3 sentences]. Identify any regulation, directive or policy that is or may be breached. Format: a verdict (compliant / non-compliant / unclear), followed by the reasoning and clause references.</div>
+<div class="tip">Good for a quick first pass before escalating a genuinely ambiguous case to the actual regulation owner.</div>
+</div>
+
+<div class="callout">Copilot can misquote references or blend text from an outdated version if multiple documents are open. Cross-check every clause, directive or policy reference against the actual source before it appears in a report, workplan or SOP.</div>
+
+</div>
+<footer class="foot">Internal reference for the Army Safety Inspectorate. Prompts are starting templates; review outputs before use.<br>&copy; 2026 ASTRO, ASI.</footer>
+</main>
+</div>
+<script src="../assets/script.js"></script>
+</body>
+</html>
