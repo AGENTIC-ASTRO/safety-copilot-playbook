@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Designing Useful Prompts | Safety Co-Pilot Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="hazard-stripe"></div>
+<div class="shell">
+<div class="mobile-bar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span> PLAYBOOK</a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">MENU</button>
+  </div>
+  <aside class="sidebar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span><br>PLAYBOOK</a>
+    <div class="brand-sub">M365 Copilot reference for Army Safety</div>
+    <div class="nav-label">Contents</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Overview</a></li>
+      <li><a class="nav-list-item" href="../01-how-it-works/index.html"><span class="num">01</span>How Safety Copilot Works on M365</a></li>
+<li><a class="nav-list-item active" href="../02-prompt-design/index.html"><span class="num">02</span>Designing Useful Prompts</a></li>
+<li><a class="nav-list-item" href="../03-regulations-query/index.html"><span class="num">03</span>Query on Army Safety Regulations</a></li>
+<li><a class="nav-list-item" href="../04-safety-workplan/index.html"><span class="num">04</span>Generation of Safety Workplan</a></li>
+<li><a class="nav-list-item" href="../05-safety-insights/index.html"><span class="num">05</span>Generation of Safety Insights</a></li>
+<li><a class="nav-list-item" href="../06-safety-sop/index.html"><span class="num">06</span>Generation of Safety SOPs</a></li>
+<li><a class="nav-list-item" href="../07-safety-education/index.html"><span class="num">07</span>Generation of Safety Education Material</a></li>
+
+    </ul>
+  </aside>
+<main>
+<div class="content">
+<div class="eyebrow">Section 02</div>
+<h1>Designing Useful Prompts</h1>
+<p class="intro">A good prompt to Copilot has four parts: who it should act as, what context it's working from, exactly what task to do and what shape the answer should take. Missing any one of these is usually why the first draft misses the mark.</p>
+
+<h2>The four-part structure</h2>
+<div class="card">
+<div class="card-head"><span class="use-case">Template shape</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as [role].
+Context: [what document/situation this relates to].
+Task: [exactly what you want done].
+Format: [how the output should be structured, e.g. table, list, memo, safety infographic or case study].</div>
+<div class="tip">This is the skeleton every prompt in this playbook follows. Fill in the four brackets and you'll usually get a usable first draft.</div>
+</div>
+
+<h2>Before and after</h2>
+<div class="card">
+<div class="card-head"><span class="use-case">Vague version (avoid this)</span></div>
+<div class="prompt-block">Help me with a safety report.</div>
+<div class="tip">Too open-ended. Copilot has to guess the audience, the format and what "help" means, so the output will need heavy rework.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Specific version (use this)</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Act as a unit safety officer. Context: I&#x27;m preparing a monthly safety report for my commanding officer covering January 2026. Task: draft a one-page summary covering incidents, near-misses, and completed corrective actions. Format: use three headed sections (Incidents, Near-Misses, Corrective Actions), each as a short paragraph followed by a bullet list.</div>
+<div class="tip">Same request, but the role, context, task and format are all explicit. The output will need far less editing.</div>
+</div>
+
+<h2>Other things that improve results</h2>
+<div class="card">
+<div class="card-head"><span class="use-case">Ask for options, not a single answer</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Give me three different ways to phrase the opening paragraph of this SOP, ranging from most formal to most direct.</div>
+<div class="tip">Useful when you're not sure what tone you want. Pick the best draft rather than trying to fix a single one.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Ask Copilot to flag its own assumptions</span><button class="copy-btn">Copy</button></div>
+<div class="prompt-block">Before answering, list any assumptions you&#x27;re making about my unit, timeframe, or regulation version. Then answer the task below.</div>
+<div class="tip">Surfaces gaps in your prompt before you get an answer built on a wrong assumption.</div>
+</div>
+
+<div class="callout">If an answer misses the mark, don't start over. Tell Copilot what was wrong ("too long", "wrong audience", "missing the corrective action column") and ask it to revise. Iterating is usually faster than re-prompting from scratch.</div>
+
+</div>
+<footer class="foot">Internal reference for the Army Safety Inspectorate. Prompts are starting templates; review outputs before use.<br>&copy; 2026 ASTRO, ASI.</footer>
+</main>
+</div>
+<script src="../assets/script.js"></script>
+</body>
+</html>
