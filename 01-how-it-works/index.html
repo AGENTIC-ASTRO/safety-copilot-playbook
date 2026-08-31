@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Safety Copilot Works on M365 | Safety Co-Pilot Playbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="hazard-stripe"></div>
+<div class="shell">
+<div class="mobile-bar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span> PLAYBOOK</a>
+    <button class="mobile-toggle" aria-label="Toggle navigation">MENU</button>
+  </div>
+  <aside class="sidebar">
+    <a class="brand" href="../index.html">SAFETY <span>CO-PILOT</span><br>PLAYBOOK</a>
+    <div class="brand-sub">M365 Copilot reference for Army Safety</div>
+    <div class="nav-label">Contents</div>
+    <ul class="nav-list">
+      <li><a href="../index.html">Overview</a></li>
+      <li><a class="nav-list-item active" href="../01-how-it-works/index.html"><span class="num">01</span>How Safety Copilot Works on M365</a></li>
+<li><a class="nav-list-item" href="../02-prompt-design/index.html"><span class="num">02</span>Designing Useful Prompts</a></li>
+<li><a class="nav-list-item" href="../03-regulations-query/index.html"><span class="num">03</span>Query on Army Safety Regulations</a></li>
+<li><a class="nav-list-item" href="../04-safety-workplan/index.html"><span class="num">04</span>Generation of Safety Workplan</a></li>
+<li><a class="nav-list-item" href="../05-safety-insights/index.html"><span class="num">05</span>Generation of Safety Insights</a></li>
+<li><a class="nav-list-item" href="../06-safety-sop/index.html"><span class="num">06</span>Generation of Safety SOPs</a></li>
+<li><a class="nav-list-item" href="../07-safety-education/index.html"><span class="num">07</span>Generation of Safety Education Material</a></li>
+
+    </ul>
+  </aside>
+<main>
+<div class="content">
+<div class="eyebrow">Section 01</div>
+<h1>How Safety Copilot Works on M365</h1>
+<p class="intro">Two things are worth understanding before you write a single prompt: where Copilot draws its information from inside M365, and the kinds of products it can generate from that information. Get these two right and everything in the rest of this playbook makes sense.</p>
+
+<h2>Where it draws its data from</h2>
+<p>On M365, Copilot does not answer from open-ended general knowledge. It grounds its answers in a curated set of official documents that the Army Safety Inspectorate has uploaded into your M365 environment, plus anything you give it directly in the prompt. It only reaches content you already have permission to open. These are the sources it pulls from:</p>
+<div class="card">
+<div class="card-head"><span class="use-case">Official documents and files</span></div>
+<div class="tip">The core of what Copilot draws on: official safety documents uploaded and made available by the Army Safety Inspectorate. Examples include Army Safety Regulations, Training Directives and Medical Directives, among others. These are the authoritative sources it grounds its answers in.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">What you attach or paste in</span></div>
+<div class="tip">A specific document, extract or data table you drop straight into the prompt for a one-off task. This is the most direct way to point Copilot at the exact source you want for that question.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">General knowledge</span></div>
+<div class="tip">The model's own baseline knowledge. Helpful for phrasing, structure and plain-language explanations, but it is not an official source and should never be trusted on its own for regulation specifics.</div>
+</div>
+
+<div class="callout">Copilot only surfaces content you already have permission to access, and it can only draw on documents that have been uploaded into your M365 environment. It cannot see systems or documents outside it, such as standalone databases or external regulation portals, unless they have been added and indexed.</div>
+
+<h2>Where to add reference files</h2>
+<p>To ground an answer in a specific document or folder, add it as a reference before you prompt: select the plus button next to the message box, then choose the upload option. It works the same way on desktop and mobile.</p>
+
+<p class="shot-label">Desktop</p>
+<div class="screenshots">
+<figure class="shot">
+<img src="../assets/img/upload-desktop-1.png" onerror="this.onerror=null;this.src='../assets/img/upload-desktop.svg'" alt="Desktop Copilot, step 1: the plus button next to the message box">
+<figcaption>1. Select the plus button (Add and manage sources) next to the message box.</figcaption>
+</figure>
+<figure class="shot">
+<img src="../assets/img/upload-desktop-2.png" onerror="this.onerror=null;this.src='../assets/img/upload-desktop.svg'" alt="Desktop Copilot, step 2: the Add content and Upload menu">
+<figcaption>2. Choose Add content or Upload, then pick your file or folder.</figcaption>
+</figure>
+</div>
+
+<p class="shot-label">Mobile</p>
+<div class="screenshots">
+<figure class="shot">
+<img src="../assets/img/upload-mobile-1.png" onerror="this.onerror=null;this.src='../assets/img/upload-mobile.svg'" alt="Mobile Copilot, step 1: the plus button in the message bar">
+<figcaption>1. Tap the plus button in the message bar.</figcaption>
+</figure>
+<figure class="shot">
+<img src="../assets/img/upload-mobile-2.png" onerror="this.onerror=null;this.src='../assets/img/upload-mobile.svg'" alt="Mobile Copilot, step 2: the File and Reference options">
+<figcaption>2. Tap File or Reference, then pick your document.</figcaption>
+</figure>
+</div>
+
+<h2>What it can generate</h2>
+<p>Once it is grounded in the right documents, Copilot can turn that material into a range of work products, from written documents to visual briefing material. The rest of this playbook is organised around the ones most useful to safety work, with ready-made prompts for each:</p>
+<div class="card">
+<div class="card-head"><span class="use-case">Written drafts</span></div>
+<div class="tip">SOPs, safety workplans, briefing summaries and report sections, drafted from a task description or an existing document. See Sections 04 and 06.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Structured data and tables</span></div>
+<div class="tip">Risk-ranked observation lists, version-comparison tables and incident pattern summaries, built from data you provide. See Sections 03 and 05.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Summaries and explanations</span></div>
+<div class="tip">Long regulation text or notes condensed into key points and plain-language readings of a clause or a scenario check. See Section 03.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">Safety infographics</span></div>
+<div class="tip">Visual one-page summaries that turn key safety messages or incident data into a clear, shareable graphic.</div>
+</div>
+<div class="card">
+<div class="card-head"><span class="use-case">PowerPoint slides</span></div>
+<div class="tip">Briefing decks built from a workplan, report or set of talking points, ready for you to refine and present.</div>
+</div>
+
+<div class="callout">Treat Copilot's regulation answers as a starting point, not a citation. It can produce a confident but wrong clause number, especially when it falls back on general knowledge rather than the actual document. Always verify against the current published regulation before an output goes into a workplan, SOP or report.</div>
+
+</div>
+<footer class="foot">Internal reference for the Army Safety Inspectorate. Prompts are starting templates; review outputs before use.<br>&copy; 2026 ASTRO, ASI.</footer>
+</main>
+</div>
+<script src="../assets/script.js"></script>
+</body>
+</html>
