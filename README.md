@@ -9,7 +9,7 @@ Plain HTML, CSS and JavaScript. No framework and no build step, so it can be hos
 index.html              Overview / landing page
 01-how-it-works/        How Safety Copilot works on M365
 02-prompt-design/       Designing useful prompts
-03-regulations-query/   Query on Army Safety Regulations
+03-regulations-query/   Query on Safety Regulations
 04-safety-workplan/     Generation of Safety Workplan
 05-safety-insights/     Generation of Safety Insights
 06-safety-sop/          Generation of Safety SOPs
@@ -27,7 +27,7 @@ assets/                 Shared CSS and JS (copy-to-clipboard, mobile nav)
 
 ## Public vs private
 
-GitHub Pages is free only for **public** repositories, which means anyone with the link can read the site. This playbook is internal Army Safety Inspectorate material, so before publishing publicly, confirm that none of the content is sensitive.
+GitHub Pages is free only for **public** repositories, which means anyone with the link can read the site. This playbook is internal Safety Inspectorate material, so before publishing publicly, confirm that none of the content is sensitive.
 
 If it needs to stay access-controlled, a public repo is not the right fit. Host it instead on your organisation's SharePoint or intranet, or use a GitHub plan that supports private Pages. The site is just static files, so it will run from any web host or file share without changes.
 
